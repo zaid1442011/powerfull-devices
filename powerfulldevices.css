@@ -1,0 +1,30 @@
+.warning{
+    font-family:monospace;
+    font-size:15px;
+    background-color:red;
+    color:white;
+    width:200px;
+    border:1px solid rgb(255, 145, 0);
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.warning-header{
+    font-size:30px;
+}
+h1{
+    position:fixed;
+    z-index:1;
+    left:470px;
+    top:-20px;
+}
+#content{
+    position:absolute;
+    top:20px;
+}
+#bottom{
+    margin:10px;
+}
+.fact{
+    border-top:2px solid rgb(222, 222,222);
+    border-bottom:2px solid rgb(222, 222,222);
+}

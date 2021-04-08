@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Powerfull devices</title>
+        <link rel="stylesheet" type="text/css" href="powerfulldevices.css">
+    </head>
+    <body>
+        <h1>Welcome to Powerfull devices</h1>
+        <div id="content">
+        <label>What's your name first name?
+            <input id="first-name" type="text">
+            </label>
+            <br>
+        </label>
+        <label>What's your name last name?
+            <input id="last-name" type="text">
+        </label>
+        <br>
+        <button id="button" type="button">Press the button to be welcomed</button>
+        <div id="message"></div>
+        <div class="warning">
+            <h3 class="warning-header"><strong>Note</h3>
+            <p>Your changes will not be saved</strong></p>
+        </div>
+        <button><a target="_blank" href="powerfulldevices.html">
+            Press the button to continue</button>
+        </div>
+        <script>
+            var button = document.getElementById("button");
+            var onButtonClick = function() {
+                var firstName = document.getElementById("first-name").value;
+                var lastName = document.getElementById("last-name").value
+                var greeting = "Hi, " + firstName + " " + lastName + " ";
+              document.getElementById("message").textContent += greeting;  
+            };
+            button.addEventListener("click", onButtonClick);
+            
+            </script>
+    </body>
+</html>
